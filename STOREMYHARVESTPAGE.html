@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sidebar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="STOREMYHARVESTPAGE.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-top-wrapper">
+      <div class="sidebar-top">
+        <a href="#" class="logo__wrapper">
+          <img src="logo (2).png" alt="Logo" class="logo-small">
+          <span class="hide company-name">
+            AgriMate
+          </span>
+        </a>
+      </div>
+      <button class="expand-btn" type="button">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="exp-btn" role="img">
+          <title id="exp-btn">Expand/Collapse Menu</title>
+          <path d="M6.00979 2.72L10.3565 7.06667C10.8698 7.58 10.8698 8.42 10.3565 8.93333L6.00979 13.28"
+            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+   
+    <div class="sidebar-links">
+      <ul>
+        <li>
+          <a href="DASHBOARDPAGE.html" title="Dashboard" class="tooltip ">
+            <i class="fas fa-tachometer-alt"></i>
+            <span class="link hide">Dashboard</span>
+           
+          </a>
+        </li>
+        <li>
+          <a href="PROFILEPAGE.html" title="PROFILE" class="tooltip">
+            <i class="fas fa-user"></i>
+              
+            <span class="link hide">Profile</span>
+          
+          </a>
+        </li>
+        <li>
+          <a href="MAKEMYFIELDPAGE.html" title="MAKEMYFIELD" class="tooltip">
+            <i  class="fas fa-tractor farm-icon" ></i>
+            <span class="link hide">Make My Field</span>
+           
+          </a>
+        </li>
+        <li>
+          <a href="STOREMYHARVESTPAGE.html" title="STOREMYHARVEST" class="tooltip active">
+            <i class="fas fa-warehouse harvest-icon2"></i>
+              
+            <span class="link hide">Store My Harvest</span>
+            
+          </a>
+        </li>
+        <li>
+          <a href="SELLMYHARVESTPAGE.html" title="SELLMYHARVEST" class="tooltip">
+            <i class="fas fa-seedling harvest-icon"></i>            <span class="link hide">Sell My Harvest</span>
+          
+          </a>
+        </li>
+        <li>
+          <a href="AGROPAYPAGE.html" title="AGROPAY" class="tooltip">
+            <i class="fas fa-wallet"></i>
+           <span class="link hide">Payment Sarthi</span>
+            
+          </a>
+        </li>
+        
+        <li>
+            <a href="FINANCEPAGE.html" title="FINANCE" class="tooltip">
+                <i class="fas fa-piggy-bank finance-icon"></i>           <span class="link hide">Finance </span>
+              
+            </a>
+          </li>
+          <li>
+            <a href="RESOURCESPAGE.html" title="RESOURCES" class="tooltip">
+                <i class="fas fa-cubes"></i>         <span class="link hide">Resources</span>
+              
+            </a>
+          </li>
+          <li>
+            <a href="EQUIPMENTGUIDEPAGE.html" title="EQUIPMENTGUIDE" class="tooltip">
+                <i class="fas fa-cogs"></i>          <span class="link hide">Equipment Guide</span>
+            
+            </a>
+          </li>
+          <li>
+            <a href="COMMUNITYPAGE.html" title="COMMUNITY" class="tooltip">
+                <i class="fas fa-users community-icon"></i>        <span class="link hide">Community</span>
+              
+            </a>
+          </li>
+    </div>
+    <div class="separator"></div>
+    <div class="sidebar-links">
+      <ul>        
+        
+      </ul>
+    </div>
+  
+      
+    </div>
+  </nav>
+  <body>
+    <div class="welcome-container">
+      <header>
+          <h1>Store My Harvest!</h1>
+         
+          
+          <p>Simply select your state and city, and we'll locate the best nearby storage facility to meet your needs!</p>
+
+      <section class="content-placeholder">
+          <!-- Space for you to add custom content about the "Store My Harvest" feature -->
+          
+      </section>
+
+      <div class="dropdown-container">
+          <label for="state">Select State:</label>
+          
+          <select class="state" onchange="populateCities()">
+              <option value="">Select State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+
+              <!-- Union Territories -->
+              <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Puducherry">Puducherry</option>
+              <option value="Ladakh">Ladakh</option>
+              <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+          </select>
+
+          
+
+          <label for="city">Select City:</label>
+          
+          <select class="city">
+              <option value="">Select City</option>
+              <option value=" New Delhi">New Delhi</option>
+              <option value=" Saket">Saket</option>
+              <option value=" Dwarka">Dwarka</option>
+              <!-- Cities will be populated based on the selected state -->
+          </select>
+          <label for=" Storage Facility ">Type of Storage Facility </label>
+          <select class="state">
+              <option value="">Select Storage Facility</option>
+              <option value="cold storage "> Cold storage </option>
+              <option value="Warehouse"> Warehouse</option>
+          </select>
+          
+          <!-- Submit Button -->
+          <a href="COLDSTORAGEHTML.html"><button type="button" onclick="submitSelection()">Proceed</button></a>
+      </div>
+  </div>
+
+ </body>
+ <script src="STOREMYHARVESTPAGE.js"></script>
+
+</html>

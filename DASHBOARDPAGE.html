@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sidebar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="DASHBOARD.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-top-wrapper">
+      <div class="sidebar-top">
+        <a href="#" class="logo__wrapper">
+          <img src="logo (2).png" alt="Logo" class="logo-small">
+          <span class="hide company-name">
+            AgriMate
+          </span>
+        </a>
+      </div>
+      <button class="expand-btn" type="button">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="exp-btn" role="img">
+          <title id="exp-btn">Expand/Collapse Menu</title>
+          <path d="M6.00979 2.72L10.3565 7.06667C10.8698 7.58 10.8698 8.42 10.3565 8.93333L6.00979 13.28"
+            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+   
+    <div class="sidebar-links">
+      <ul>
+        <li>
+          <a href="DASHBOARDPAGE.html" title="Dashboard" class="tooltip active ">
+            <i class="fas fa-tachometer-alt"></i>
+            <span class="link hide">Dashboard</span>
+           
+          </a>
+        </li>
+        <li>
+          <a href="PROFILEPAGE.html" title="PROFILE" class="tooltip">
+            <i class="fas fa-user"></i>
+              
+            <span class="link hide">Profile</span>
+          
+          </a>
+        </li>
+        <li>
+          <a href="MAKEMYFIELDPAGE.html" title="MAKEMYFIELD" class="tooltip">
+            <i  class="fas fa-tractor farm-icon" ></i>
+            <span class="link hide">Make My Field</span>
+           
+          </a>
+        </li>
+        <li>
+          <a href="STOREMYHARVESTPAGE.html" title="STOREMYHARVEST" class="tooltip">
+            <i class="fas fa-warehouse harvest-icon2"></i>
+              
+            <span class="link hide">Store My Harvest</span>
+            
+          </a>
+        </li>
+        <li>
+          <a href="SELLMYHARVESTPAGE.html" title="SELLMYHARVEST" class="tooltip">
+            <i class="fas fa-seedling harvest-icon"></i>            <span class="link hide">Sell My Harvest</span>
+          
+          </a>
+        </li>
+        <li>
+          <a href="AGROPAYPAGE.html" title="AGROPAY" class="tooltip">
+            <i class="fas fa-wallet"></i>
+           <span class="link hide">Payment Sarthi</span>
+            
+          </a>
+        </li>
+        
+        <li>
+            <a href="FINANCEPAGE.html" title="FINANCE" class="tooltip">
+                <i class="fas fa-piggy-bank finance-icon"></i>           <span class="link hide">Finance </span>
+              
+            </a>
+          </li>
+          <li>
+            <a href="RESOURCESPAGE.html" title="RESOURCES" class="tooltip">
+                <i class="fas fa-cubes"></i>         <span class="link hide">Resources</span>
+              
+            </a>
+          </li>
+          <li>
+            <a href="EQUIPMENTGUIDEPAGE.html" title="EQUIPMENTGUIDE" class="tooltip">
+                <i class="fas fa-cogs"></i>          <span class="link hide">Equipment Guide</span>
+            
+            </a>
+          </li>
+          <li>
+            <a href="COMMUNITYPAGE.html" title="COMMUNITY" class="tooltip">
+                <i class="fas fa-users community-icon"></i>        <span class="link hide">Community</span>
+              
+            </a>
+          </li>
+    </div>
+    <div class="separator"></div>
+    <div class="sidebar-links">
+      <ul>        
+        
+      </ul>
+    </div>
+  
+      
+    </div>
+  </nav>
+  <body>
+    <div class="main-content">
+        <div class="container">
+        <h1>Welcome Rajesh, </h1><h1 class="greeting" id="greeting"></h1>
+
+    </div>
+        <div class="time" id="time">12:12:11</div>
+            <div class="date" id="date">January 1, 1970</div>
+            <br>
+            
+              <br>
+              <div class="timeline-container">
+                <div class="timeline-track">
+                  <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            
+                <div class="timeline-step" style="left: 0%;" onclick="updateProgress(0)">
+                  1
+                  <div class="tooltip2">Germination: Seed begins to sprout.</div>
+                </div>
+                <div class="timeline-step" style="left: 25%;" onclick="updateProgress(25)">
+                  2
+                  <div class="tooltip2">Seedling: Plant starts growing leaves.</div>
+                </div>
+                <div class="timeline-step" style="left: 50%;" onclick="updateProgress(50)">
+                  3
+                  <div class="tooltip2">Vegetative: Rapid growth phase.</div>
+                </div>
+                <div class="timeline-step" style="left: 75%;" onclick="updateProgress(75)">
+                  4
+                  <div class="tooltip2">Flowering: Plant starts blooming.</div>
+                </div>
+                <div class="timeline-step" style="left: 100%;" onclick="updateProgress(100)">
+                  5
+                  <div class="tooltip2">Harvest: Crop is ready to be harvested.</div>
+                </div>
+              </div>
+            
+            
+        <div class="dashboard">
+          
+            
+            <!-- Overview Section -->
+            <div class="container2">
+                <!-- Expandable div with 3D effect -->
+                <div class="expandable-box collapsed" onclick="toggleExpand(this)">
+                    <h3>Farm Overview</h3>
+                   
+                    <div class="details">
+                        <h2>Details</h2>
+                    <p>Total Yield: 1500 kg</p>
+                    <p>Profit: ₹20,000</p>
+                    <p>Season: Summer</p>
+                    <p>Next Harvest: July 15</p>
+                    <p>Last Pest Treatment: June 5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="expandable-box collapsed" onclick="toggleExpand(this)">
+                <h3>Field Management</h3>
+               
+                <div class="details">
+                    <p class="f">Field 1: Corn (Healthy)</p>
+                    <p class="f">Field 2: Wheat (Needs Water)</p>
+                    <p class="f">Harvest Date: July 15</p>
+                  
+                </div>
+            </div>
+        
+            <div class="expandable-box collapsed red" onclick="toggleExpand(this)">
+                <h3>3 notifications</h3>
+               
+                <div class="details pp">
+                    <ul>
+                        <li> Crop health issues detected in Field 1</li>
+                        <li> Weather alert: Heavy rainfall expected tomorrow</li>
+                        <li> Low soil moisture in Field 3</li>
+                      </ul>
+                </div>
+            </div>
+<div class="weather-widget" id="weather">
+    <h2>Loading...</h2>
+    <div class="temperature">--°C</div>
+    <img src="haze.png" >
+    <div class="description"></div>
+</div>
+
+        
+        
+        <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="carousel-item">
+                        <img src="banner4.jpg" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="banner5.jpg" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="banner6.jpeg" alt="Image 3">
+                    </div>
+                </div>    
+            </div>
+            
+            
+        
+         <br>
+         
+            
+            <!-- Equipment Management Section -->
+          
+            <div class="section inventory right">
+                
+                <div class="image-cover2"></div>
+           <div class="card-content">
+            
+                <h2>Equipment Status</h2>
+                <p>Tractor: In Use</p>
+                <p>Harvester: Available</p>
+                <p>Next Maintenance: July 5</p>
+                
+            </div> 
+            </div>
+        
+            <!-- Pest Monitoring Section -->
+          
+            
+            <!-- Inventory Section -->
+            <div class="section inventory left">
+                
+                <div class="image-cover"></div>
+           <div class="card-content">
+             <h2>Inventory</h2>
+             <p class="i">Seeds: 500 kg</p>
+             <p class="i">Fertilizers: 200 kg</p>
+             <p class="i">Next Order: June 25</p>
+           
+            </div> 
+            </div>
+            
+            <br>
+            <div class="section pest-monitoring">
+                
+                <h2>Pest Monitoring</h2>
+                <p>Current Alert: None</p>
+                <p>Last Treatment: June 5</p>
+                
+              </div>
+            
+              <div class="tips-container">
+                <div class="tips-header">🌱 Personalized Tips & Recommendations</div>
+                <div class="tips-content">
+                  <div class="tip-card">
+                    <div class="tip-title">Water Conservation</div>
+                    <div class="tip-description">
+                      Consider using drip irrigation to reduce water usage. This can help maintain soil moisture while conserving water.
+                    </div>
+                  </div>
+                  <div class="tip-card">
+                    <div class="tip-title">Crop Rotation</div>
+                    <div class="tip-description">
+                      Rotate crops in different fields each season to improve soil fertility and reduce pest risks.
+                    </div>
+                  </div>
+                  <div class="tip-card">
+                    <div class="tip-title">Natural Pest Control</div>
+                    <div class="tip-description">
+                      Use natural pesticides like neem oil to manage pests without harming beneficial insects.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            
+            <div class="line3">
+            <!-- Task Management Section -->
+            <div class="section tasks">
+              <h2>Tasks ✅</h2>
+              <p>- Water Field 2</p>
+              <p>- Check Livestock Feed</p>
+            </div>
+            </div>
+            <div class="transplant-card tc">
+                <h3>Transplanting Information</h3>
+                <p><span class="label">Plant Name:</span> Tomato</p>
+                <p><span class="label">Transplant Date:</span> March 15, 2024</p>
+                <p><span class="label">Location:</span> Greenhouse 3</p>
+                <p><span class="label">Time Spent:</span> 4 hours</p>
+            
+                <div class="date-section">
+                  <p><span class="label">Next Check Date:</span> March 30, 2024</p>
+                </div>
+                <a href="#" class="btn">Edit Info</a>
+              </div>
+            
+          </div>
+          <img src="Agrosarthi__-removebg-preview.png" class="dg">
+          <h1 class="quote">"We have neglected the truth that a good farmer is a craftsman of the highest order,<br> a kind of artist."<br>"हमने इस सच्चाई को नज़रअंदाज कर दिया है कि एक अच्छा किसान सर्वोच्च कोटि का शिल्पकार,<br> एक प्रकार का कलाकार होता है।"</h1>
+    
+          <div class="notification-icon" onclick="togglePopup()">
+            <i class="fas fa-bell"></i>
+            <span class="badge" id="notificationCount">2</span> <!-- Notification count badge -->
+        </div>
+        
+        <!-- Notification Popup Div -->
+        <div id="popup" class="notification-popup">
+            <h4>Notifications</h4>
+            <p><ul><li>“Those weeds are getting brave—time to show them who’s boss!😎”</li>
+            <li>“Your crops are gossiping! They heard rain might be on the way.🥳”</li></ul></p>
+        </div>
+  </body>
+  <script src="DASHBOARD.js"></script>
+  <button class="settings-btn">
+    <i class="fas fa-cogs"></i>
+  </button>
+</body>
+
+</html>
